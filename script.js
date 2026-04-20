@@ -259,8 +259,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // --- CRM INTEGRATION ---
             const CRM_STORAGE_KEY = 'crm_realty_data';
-            const existingData = JSON.parse(localStorage.getItem(CRM_STORAGE_KEY)) || [];
+            let existingData = JSON.parse(localStorage.getItem(CRM_STORAGE_KEY)) || [];
             
+            // Nếu localStorage trống, có thể CRM chưa chạy lần nào.
+            // Để an toàn, mình cứ khởi tạo là array.
+            if (!Array.isArray(existingData)) existingData = [];
+
             const newId = existingData.length > 0 ? Math.max(...existingData.map(c => c.id)) + 1 : 1;
             const newLead = {
                 id: newId,
@@ -273,9 +277,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 date: new Date().toISOString().split('T')[0]
             };
             
+            console.log('--- DỮ LIỆU GỬI SANG CRM ---');
+            console.table(newLead);
+            
             existingData.push(newLead);
             localStorage.setItem(CRM_STORAGE_KEY, JSON.stringify(existingData));
-            console.log('Lead đã được lưu vào LocalStorage (Kết nối với CRM)');
+            console.log('✅ Lead đã được lưu vào LocalStorage (Key: crm_realty_data)');
 
             // Hiện Success State
             const successDiv = formElement.parentElement.querySelector('.form-success');
