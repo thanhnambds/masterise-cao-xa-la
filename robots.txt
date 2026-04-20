@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /.git/
+Disallow: /.claude/
+
+# Sitemap
+Sitemap: https://lumiere-cao-xa-la.vn/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1

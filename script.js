@@ -257,9 +257,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const heroSub = formElement.parentElement.querySelector('.hero-sub-headline');
             if(heroSub) heroSub.style.display = 'none';
 
-            // --- CRM INTEGRATION (NOW USING SESSION STORAGE FOR PRIVACY) ---
-            const STORAGE_KEY = 'crm_realty_session_data';
-            const existingData = JSON.parse(sessionStorage.getItem(STORAGE_KEY)) || [];
+            // --- CRM INTEGRATION ---
+            const CRM_STORAGE_KEY = 'crm_realty_data';
+            const existingData = JSON.parse(localStorage.getItem(CRM_STORAGE_KEY)) || [];
             
             const newId = existingData.length > 0 ? Math.max(...existingData.map(c => c.id)) + 1 : 1;
             const newLead = {
@@ -274,8 +274,8 @@ document.addEventListener('DOMContentLoaded', () => {
             };
             
             existingData.push(newLead);
-            sessionStorage.setItem(STORAGE_KEY, JSON.stringify(existingData));
-            console.log('Lead đã được lưu vào SessionStorage (Bảo mật hơn)');
+            localStorage.setItem(CRM_STORAGE_KEY, JSON.stringify(existingData));
+            console.log('Lead đã được lưu vào LocalStorage (Kết nối với CRM)');
 
             // Hiện Success State
             const successDiv = formElement.parentElement.querySelector('.form-success');
