@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // --- FORM DATABASE INTEGRATION (GOOGLE SHEETS) ---
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxS88xb-ThNC26S-sU_h6zAoMzfbTf0yab4auSiPucNoAkJbMiTvMyBJMarilmeyEXk/exec';
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxCGXqYV_ARz7eHA2CjGQ86jJN9V-tNym91zzTSBKBYPV5ZkbgXW9DOM8rsAby22sM/exec';
     const RECAPTCHA_SITE_KEY = 'YOUR_SITE_KEY'; // Cần thay bằng Site Key thật
 
     const handleFormSubmit = async (formElement) => {

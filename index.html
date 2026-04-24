@@ -161,13 +161,14 @@
     <header class="header" id="header">
         <div class="nav-container container">
             <a href="#dang-ky" class="logo">
-                <img src="Logo-Masterise-Homes-e1643183745703.png" alt="LUMIÈRE Logo">
+                <img src="images/Logo-Masterise-Homes-e1643183745703.png" alt="LUMIÈRE Logo">
                 LUMIÈRE CAO XÀ LÁ
             </a>
             <!-- Desktop nav -->
             <nav class="nav" id="desktop-nav">
                 <ul class="nav">
                     <li><a href="#tong-quan">Tổng Quan</a></li>
+                    <li><a href="#sa-ban-360">Tour 360°</a></li>
                     <li><a href="#vi-tri">Vị Trí</a></li>
                     <li><a href="#tien-ich">Tiện Ích</a></li>
                     <li><a href="#mat-bang">Mặt Bằng</a></li>
@@ -188,6 +189,7 @@
         <div class="mobile-nav" id="mobile-nav">
             <ul>
                 <li><a href="#tong-quan">Tổng Quan</a></li>
+                <li><a href="#sa-ban-360">Tour 360°</a></li>
                 <li><a href="#vi-tri">Vị Trí</a></li>
                 <li><a href="#tien-ich">Tiện Ích</a></li>
                 <li><a href="#mat-bang">Mặt Bằng</a></li>
@@ -199,7 +201,7 @@
     </header>
 
     <section class="hero" id="hero">
-        <div class="hero-bg" style="background-image: url('6D45EC47-F3E1-4F0F-BBD0-748714BD6C14.JPEG');"></div>
+        <div class="hero-bg" style="background-image: url('images/6D45EC47-F3E1-4F0F-BBD0-748714BD6C14.JPEG');"></div>
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content form-card">
@@ -208,6 +210,7 @@
 
                 <form class="hero-form reveal-up delay-2" id="hero-form">
                     <input type="hidden" name="form_origin" value="Hero Section (Đầu trang)">
+                    <input type="hidden" name="project" value="Cao Xà Lá">
                     <div class="form-group">
                         <input type="text" name="fullname" placeholder="Anh/Chị tên là..." minlength="2" maxlength="50" required>
                     </div>
@@ -222,7 +225,8 @@
                     <h3>Gửi thành công!</h3>
                     <p>Chào anh/chị, tài liệu đã sẵn sàng. Mời anh/chị nhấn nút bên dưới để xem ngay.</p>
                     <div class="success-actions">
-                        <a href="https://drive.google.com/file/d/1q4ccXmHxmcDVb5oiYNbzJncmvSKPkqXq/view" target="_blank" rel="noopener noreferrer" class="btn-solid btn-full"><i class="fa-solid fa-file-pdf"></i> XEM BẢNG GIÁ (PDF)</a>
+                        <a href="vinhomes-galaxy.pdf" target="_blank" rel="noopener noreferrer" class="btn-solid btn-full"><i class="fa-solid fa-file-pdf"></i> TÀI LIỆU VINHOMES GALAXY</a>
+                        <a href="tai-sao-chon-masterise.pdf" target="_blank" rel="noopener noreferrer" class="btn-solid btn-full"><i class="fa-solid fa-file-pdf"></i> TẠI SAO CHỌN MASTERISE?</a>
                         <a href="https://zalo.me/0965325555" target="_blank" rel="noopener noreferrer" class="btn-outline btn-full"><i class="fa-solid fa-comments"></i> CHAT ZALO TƯ VẤN</a>
                     </div>
                 </div>
@@ -267,10 +271,7 @@
                 <!-- Cột trái: Ảnh phối cảnh -->
                 <div class="tq-image reveal-left">
                     <div class="tq-img-main">
-                        <img src="z7734193171056_4e4d733ddfac905fcb0577ac33fea9ff.jpg" alt="Phối cảnh LUMIÈRE Cao Xà Lá">
-                    </div>
-                    <div class="tq-img-sub">
-                        <img src="z7721281370437_96f250d4c7c32248e498181edf84c37d.jpg" alt="Masterise Homes – LUMIÈRE">
+                        <img src="images/z7734193171056_4e4d733ddfac905fcb0577ac33fea9ff.jpg" alt="Phối cảnh LUMIÈRE Cao Xà Lá">
                     </div>
                 </div>
 
@@ -341,8 +342,23 @@
         </div>
     </section>
 
+    <!-- Sa Bàn 360 -->
+    <section class="section bg-gray" id="sa-ban-360">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>Trải Nghiệm Sa Bàn 360°</h2>
+                <div class="divider"></div>
+                <p>Khám phá không gian thực tế ảo dự án Masterise Cao Xà Lá và các tầm view thực tế ngay tại nhà</p>
+            </div>
+            
+            <div class="virtual-tour-wrapper reveal-up delay-1" style="border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-top: 30px;">
+                <iframe src="https://kuula.co/share/collection/7M88S?logo=1&info=1&fs=1&vr=1&sd=1&thumbs=1" width="100%" height="600" style="width: 100%; height: 600px; border: none; max-width: 100%; display: block;" allow="xr-spatial-tracking; gyroscope; accelerometer; fullscreen" allowfullscreen="true" scrolling="no"></iframe>
+            </div>
+        </div>
+    </section>
+
     <!-- Vị Trí -->
-    <section class="section bg-gray" id="vi-tri">
+    <section class="section" id="vi-tri">
         <div class="container">
             <div class="section-header reveal-up">
                 <h2>Vị Thế Độc Tôn – Sát Vách Ga Metro</h2>
@@ -361,7 +377,7 @@
             </div>
 
             <div class="image-map-wrapper reveal-up" style="margin-top: 30px;">
-                <img src="z7734225645805_7ade9944af3ddd44f94399d7407d45fd.jpg" alt="Kết nối Metro – LUMIÈRE Cao Xà Lá" loading="lazy">
+                <img src="images/ranh-gioi-tiep-giap.jpg" alt="Ranh giới tiếp giáp – LUMIÈRE Cao Xà Lá" loading="lazy">
             </div>
         </div>
     </section>
@@ -391,49 +407,49 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="am-card">
-                                <img src="z7731552928515_81b23244b917b95de5887e4617e2c3f5.jpg" alt="Sảnh Đón Hạng Sang" loading="lazy">
+                                <img src="images/tien-ich-1.jpg" alt="Sảnh Đón Hạng Sang" loading="lazy">
                                 <div class="am-caption">SẢNH ĐÓN HẠNG SANG</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="am-card">
-                                <img src="z7731552928548_8fd374f57da8d08b06f886c38e84f44f.jpg" alt="Hồ Bơi Vô Cực" loading="lazy">
+                                <img src="images/tien-ich-2.jpg" alt="Hồ Bơi Vô Cực" loading="lazy">
                                 <div class="am-caption">HỒ BƠI VÔ CỰC</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="am-card">
-                                <img src="z7731552928551_55f00b1bcb687e48fbd79d06c7c6a92c.jpg" alt="Công Viên Nội Khu" loading="lazy">
+                                <img src="images/tien-ich-3.jpg" alt="Công Viên Nội Khu" loading="lazy">
                                 <div class="am-caption">CÔNG VIÊN NỘI KHU</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="am-card">
-                                <img src="z7734193171056_4e4d733ddfac905fcb0577ac33fea9ff.jpg" alt="Gym & Yoga Center" loading="lazy">
+                                <img src="images/tien-ich-4.jpg" alt="Gym & Yoga Center" loading="lazy">
                                 <div class="am-caption">GYM & YOGA CENTER</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="am-card">
-                                <img src="z7731552928553_57b8cca8826a4fa57aaa728f5e9d6b7f.jpg" alt="Khu Vui Chơi Trẻ Em" loading="lazy">
+                                <img src="images/tien-ich-5.jpg" alt="Khu Vui Chơi Trẻ Em" loading="lazy">
                                 <div class="am-caption">KHU VUI CHƠI TRẺ EM</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="am-card">
-                                <img src="z7731552928554_26227c58165ede8192cb69814c5ddc01.jpg" alt="Khu Thương Mại" loading="lazy">
+                                <img src="images/tien-ich-6.jpg" alt="Khu Thương Mại" loading="lazy">
                                 <div class="am-caption">KHU THƯƠNG MẠI</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="am-card">
-                                <img src="z7735989086636_692114c73657788b3defc6fa9d74e6bc.jpg" alt="Business Lounge" loading="lazy">
+                                <img src="images/tien-ich-7.jpg" alt="Business Lounge" loading="lazy">
                                 <div class="am-caption">BUSINESS LOUNGE</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="am-card">
-                                <img src="z7735989086646_88d89c51151d850999a86b34dafc7f80.jpg" alt="Sky Garden" loading="lazy">
+                                <img src="images/tien-ich-8.jpg" alt="Sky Garden" loading="lazy">
                                 <div class="am-caption">SKY GARDEN</div>
                             </div>
                         </div>
@@ -459,7 +475,7 @@
             </div>
             <div class="mat-bang-wrapper reveal-up delay-1">
                 <div class="mat-bang-img-container">
-                    <img src="z7733384035912_d6c12d69d81438672ac8a072ea67055c.jpg" alt="Mặt Bằng LUMIÈRE Cao Xà Lá" id="mat-bang-img" loading="lazy">
+                    <img src="images/mat-bang-tong-the.jpg" alt="Mặt Bằng LUMIÈRE Cao Xà Lá" id="mat-bang-img" loading="lazy">
                     <div class="mat-bang-zoom-hint">
                         <i class="fa-solid fa-magnifying-glass-plus"></i>
                         <span>Nhấn để phóng to</span>
@@ -490,7 +506,7 @@
     <!-- Lightbox overlay -->
     <div id="mb-lightbox" class="mb-lightbox" onclick="this.style.display='none'">
         <span class="mb-lightbox-close">&times;</span>
-        <img src="z7733384035912_d6c12d69d81438672ac8a072ea67055c.jpg" alt="Mặt Bằng Phóng To" loading="lazy">
+        <img src="images/mat-bang-tong-the.jpg" alt="Mặt Bằng Phóng To" loading="lazy">
     </div>
 
     <!-- Chính Sách Bán Hàng -->
@@ -502,13 +518,12 @@
                 <p>Chính sách thanh toán siêu linh hoạt, hỗ trợ lãi suất hấp dẫn – Cơ hội tốt nhất để sở hữu căn hộ hạng sang ngay tại trung tâm Hà Nội.</p>
             </div>
 
-            <div class="policy-grid reveal-up delay-1">
-                <div class="policy-card">
-                    <img src="z7735989086647_17779240eb5e0c8aa4455921185e79f4.jpg" alt="Chính sách bán hàng LUMIÈRE" loading="lazy">
-                </div>
-                <div class="policy-card">
-                    <img src="z7735989086648_6888ff48241b28720564f1fe9ad31c92.jpg" alt="Tiến độ thanh toán LUMIÈRE" loading="lazy">
-                </div>
+            <div class="policy-update-box reveal-up delay-1" style="text-align: center; padding: 50px 30px; background: #f4f7f2; border-radius: 20px; border: 1px dashed #3f5c38; margin-top: 30px; box-shadow: 0 10px 30px rgba(63, 92, 56, 0.05);">
+                <i class="fa-solid fa-calendar-check" style="font-size: 3.5rem; color: #3f5c38; margin-bottom: 25px; display: block;"></i>
+                <p style="font-size: 1.3rem; color: #333; line-height: 1.8; max-width: 700px; margin: 0 auto;">
+                    Chính sách bán hàng hiện đang được cập nhật, chi tiết dự kiến anh chị vui lòng liên hệ <br>
+                    <strong style="color: #10263f; font-size: 1.5rem;">e Nam <a href="tel:0965325555" style="color: #3f5c38; text-decoration: none;">0965 325 555</a></strong>
+                </p>
             </div>
         </div>
     </section>
@@ -558,7 +573,7 @@
     </section>
 
     <!-- CTA Form -->
-    <section class="section cta-section" id="dang-ky" style="background-image: url('6D45EC47-F3E1-4F0F-BBD0-748714BD6C14.JPEG');">
+    <section class="section cta-section" id="dang-ky" style="background-image: url('images/6D45EC47-F3E1-4F0F-BBD0-748714BD6C14.JPEG');">
         <div class="container">
             <div class="cta-box reveal-up">
                 <div class="cta-text">
@@ -567,6 +582,7 @@
                 </div>
                 <form class="cta-form" id="footer-form">
                     <input type="hidden" name="form_origin" value="CTA Section (Cuối trang)">
+                    <input type="hidden" name="project" value="Cao Xà Lá">
                     <input type="text" name="fullname" placeholder="Anh/Chị tên là..." minlength="2" maxlength="50" required>
                     <input type="tel" name="phone" placeholder="Số Zalo nhận bảng giá..." pattern="(0|\+84)[3|5|7|8|9][0-9]{8}" maxlength="12" title="Vui lòng nhập số điện thoại Việt Nam hợp lệ (ví dụ: 0912345678)" required>
                     <button type="submit" class="btn-solid btn-large btn-shimmer"><i class="fa-solid fa-file-pdf"></i> TẢI BẢNG GIÁ CHI TIẾT (PDF)</button>
@@ -577,7 +593,8 @@
                     <h3>Đăng ký thành công!</h3>
                     <p>Mời anh/chị nhấn nút bên dưới để nhận tài liệu chi tiết.</p>
                     <div class="success-actions">
-                        <a href="https://drive.google.com/file/d/1q4ccXmHxmcDVb5oiYNbzJncmvSKPkqXq/view" target="_blank" class="btn-solid btn-full"><i class="fa-solid fa-file-pdf"></i> TẢI BẢNG GIÁ</a>
+                        <a href="vinhomes-galaxy.pdf" target="_blank" class="btn-solid btn-full"><i class="fa-solid fa-file-pdf"></i> TÀI LIỆU VINHOMES GALAXY</a>
+                        <a href="tai-sao-chon-masterise.pdf" target="_blank" class="btn-solid btn-full"><i class="fa-solid fa-file-pdf"></i> TẠI SAO CHỌN MASTERISE?</a>
                         <a href="https://zalo.me/0965325555" target="_blank" class="btn-outline btn-full"><i class="fa-brands fa-whatsapp"></i> CHAT ZALO</a>
                     </div>
                 </div>
@@ -588,7 +605,7 @@
     <footer class="footer" role="contentinfo">
         <div class="container footer-content">
             <div class="footer-col footer-brand">
-                <img src="Logo-Masterise vàng nổi.png" alt="LUMIÈRE Cao Xà Lá Logo" class="footer-logo-img">
+                <img src="images/Logo-Masterise vàng nổi.png" alt="LUMIÈRE Cao Xà Lá Logo" class="footer-logo-img">
                 <p>Kiến tạo không gian sống đỉnh cao giữa tâm điểm di sản Nguyễn Trãi – Thanh Xuân, Hà Nội.</p>
             </div>
             <div class="footer-col">

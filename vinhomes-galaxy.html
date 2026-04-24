@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinhomes Galaxy - Tâm Điểm Thượng Lưu 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .page-break { border-bottom: 2px dashed #e5e7eb; margin: 40px 0; }
+        .signature { color: #b8860b; font-weight: 700; border-top: 1px solid #eee; padding-top: 10px; margin-top: 20px; }
+        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&q=80&w=1600'); background-size: cover; background-position: center; }
+        .card { transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-5px); }
+        
+        /* Cấu hình khi in PDF (Chrome Headless) */
+        @media print {
+            body { background-color: #ffffff !important; -webkit-print-color-adjust: exact; }
+            .page-break { display: block; page-break-before: always; margin: 0; border: none; }
+            section { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- TRANG 1: HERO & TỔNG QUAN -->
+    <section class="min-h-screen flex flex-col justify-center hero-gradient text-white p-8 md:p-20 relative">
+        <div class="max-w-4xl">
+            <h1 class="serif text-5xl md:text-7xl mb-6">VINHOMES GALAXY</h1>
+            <p class="text-xl md:text-2xl mb-8 font-light tracking-widest uppercase">Tâm Điểm Sống Thượng Lưu Nội Đô 2026</p>
+            <div class="w-24 h-1 bg-yellow-600 mb-8"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm md:text-base bg-black bg-opacity-40 p-6 rounded-lg backdrop-blur-sm">
+                <div>
+                    <p class="mb-2"><strong>📍 Vị trí:</strong> 231 - 235 Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                    <p class="mb-2"><strong>🏗️ Chủ đầu tư:</strong> Vinhomes & Masterise Homes</p>
+                    <p class="mb-2"><strong>📐 Quy mô:</strong> 11 ha | 9 - 11 tòa tháp</p>
+                </div>
+                <div>
+                    <p class="mb-2"><strong>💎 Sản phẩm:</strong> Studio, 1PN - 4PN, Duplex, Penthouse</p>
+                    <p class="mb-2"><strong>✨ Tiêu chuẩn:</strong> Bàn giao hạng sang 6 sao</p>
+                    <p class="mb-2"><strong>🔑 Bàn giao:</strong> Quý I/2028 (Dự kiến)</p>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 right-10 text-right">
+            <p class="signature text-yellow-500">ThanhNamBĐS 0965325555</p>
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+
+    <!-- TRANG 2: VỊ TRÍ KIM CƯƠNG -->
+    <section class="max-w-6xl mx-auto p-8 md:py-20 h-screen flex flex-col justify-center">
+        <h2 class="serif text-3xl md:text-4xl text-center mb-16 text-blue-900 uppercase tracking-wider">Vị Thế "Kim Cương" & Kết Nối Đa Tầng</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-lg card">
+                <div class="text-yellow-600 text-4xl mb-4">🚇</div>
+                <h3 class="font-bold text-xl mb-3">Kết nối Metro</h3>
+                <p class="text-gray-600 leading-relaxed">Sát cạnh ga Thượng Đình (Metro 2A), di chuyển vào trung tâm chỉ trong vài phút, không lo tắc đường.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg card">
+                <div class="text-yellow-600 text-4xl mb-4">🛣️</div>
+                <h3 class="font-bold text-xl mb-3">Hạ tầng bứt phá</h3>
+                <p class="text-gray-600 leading-relaxed">Hưởng lợi trực tiếp từ đường Vành đai 2.5 và Vành đai 3, kết nối xuyên suốt các quận nội thành.</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg card">
+                <div class="text-yellow-600 text-4xl mb-4">🏙️</div>
+                <h3 class="font-bold text-xl mb-3">Tâm điểm tiện ích</h3>
+                <p class="text-gray-600 leading-relaxed">Bán kính 1-5km hội tụ các đại học danh tiếng (Bách Khoa, Kinh Tế) và bệnh viện quốc tế (Bạch Mai, Việt Pháp).</p>
+            </div>
+        </div>
+        <div class="text-right mt-12">
+            <p class="signature">ThanhNamBĐS 0965325555</p>
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+
+    <!-- TRANG 3: TIỆN ÍCH ALL-IN-ONE -->
+    <section class="bg-blue-900 text-white p-8 md:py-20 h-screen flex flex-col justify-center">
+        <div class="max-w-6xl mx-auto w-full">
+            <h2 class="serif text-3xl md:text-4xl text-center mb-16 uppercase tracking-wider">Hệ Sinh Thái "All-In-One" Đẳng Cấp</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <span class="bg-yellow-600 p-2 rounded-full">✓</span>
+                        <div>
+                            <h4 class="font-bold text-lg">Giáo dục & Y tế quốc tế</h4>
+                            <p class="text-blue-200 text-sm">Hệ thống Vinschool và Vinmec ngay trong nội khu, chăm sóc trọn vẹn từ thể chất đến trí tuệ.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="bg-yellow-600 p-2 rounded-full">✓</span>
+                        <div>
+                            <h4 class="font-bold text-lg">Thiên đường mua sắm Vincom</h4>
+                            <p class="text-blue-200 text-sm">Trung tâm thương mại Vincom Mega Mall quy mô lớn dưới khối đế, đáp ứng mọi nhu cầu giải trí.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="bg-yellow-600 p-2 rounded-full">✓</span>
+                        <div>
+                            <h4 class="font-bold text-lg">Không gian xanh hiếm có</h4>
+                            <p class="text-blue-200 text-sm">Mật độ xây dựng cực thấp (~32%), công viên trung tâm và vườn thiền Sky Garden độc bản.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <span class="bg-yellow-600 p-2 rounded-full">✓</span>
+                        <div>
+                            <h4 class="font-bold text-lg">Quản lý Smart City</h4>
+                            <p class="text-blue-200 text-sm">Ứng dụng công nghệ AI/IoT trong vận hành, đảm bảo an ninh đa lớp tuyệt đối.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-2xl h-80">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="Building" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="text-right mt-12">
+                <p class="signature text-yellow-500">ThanhNamBĐS 0965325555</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+
+    <!-- TRANG 4: SẢN PHẨM & GIÁ BÁN -->
+    <section class="max-w-5xl mx-auto p-8 md:py-20 h-screen flex flex-col justify-center">
+        <h2 class="serif text-3xl md:text-4xl text-center mb-10 text-blue-900 uppercase">Danh Mục Sản Phẩm & Giá Dự Kiến</h2>
+        <p class="text-center text-gray-500 mb-12 italic">*Thông tin tham khảo tại thời điểm Tháng 4/2026</p>
+        
+        <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse bg-white rounded-xl overflow-hidden shadow-xl">
+                <thead class="bg-yellow-600 text-white">
+                    <tr>
+                        <th class="p-4 md:p-6 font-semibold border-b">Loại hình căn hộ</th>
+                        <th class="p-4 md:p-6 font-semibold border-b">Diện tích (m²)</th>
+                        <th class="p-4 md:p-6 font-semibold border-b">Giá bán dự kiến (Tỷ VNĐ)</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    <tr><td class="p-4 md:p-6 font-medium">Căn hộ Studio</td><td class="p-4 md:p-6 text-gray-600">28 – 38</td><td class="p-4 md:p-6 text-yellow-700 font-bold">Liên hệ</td></tr>
+                    <tr class="bg-gray-50"><td class="p-4 md:p-6 font-medium">Căn hộ 1 Phòng ngủ</td><td class="p-4 md:p-6 text-gray-600">37 – 53</td><td class="p-4 md:p-6 text-yellow-700 font-bold">9 – 10</td></tr>
+                    <tr><td class="p-4 md:p-6 font-medium">Căn hộ 2 Phòng ngủ</td><td class="p-4 md:p-6 text-gray-600">58 – 81</td><td class="p-4 md:p-6 text-yellow-700 font-bold">12 – 15</td></tr>
+                    <tr class="bg-gray-50"><td class="p-4 md:p-6 font-medium">Căn hộ 3 Phòng ngủ</td><td class="p-4 md:p-6 text-gray-600">85 – 120</td><td class="p-4 md:p-6 text-yellow-700 font-bold">15 – 18</td></tr>
+                    <tr><td class="p-4 md:p-6 font-medium">Căn hộ 4 Phòng ngủ</td><td class="p-4 md:p-6 text-gray-600">125 – 156</td><td class="p-4 md:p-6 text-yellow-700 font-bold">28 – 30</td></tr>
+                    <tr class="bg-gray-50"><td class="p-4 md:p-6 font-medium">Penthouse/Duplex</td><td class="p-4 md:p-6 text-gray-600">200 – 783</td><td class="p-4 md:p-6 text-yellow-700 font-bold">Từ 35 - 48++</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="text-right mt-12">
+            <p class="signature">ThanhNamBĐS 0965325555</p>
+        </div>
+    </section>
+
+    <div class="page-break"></div>
+
+    <!-- TRANG 5: CHÍNH SÁCH & LIÊN HỆ -->
+    <section class="max-w-6xl mx-auto p-8 md:py-20 mb-20 bg-yellow-50 rounded-3xl border border-yellow-100 h-screen flex flex-col justify-center">
+        <h2 class="serif text-3xl md:text-4xl text-center mb-12 text-yellow-800 uppercase">Chính Sách Tài Chính Vượt Trội</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-yellow-600">
+                    <h5 class="font-bold text-yellow-800 mb-2">Đòn bẩy tài chính 85%</h5>
+                    <p class="text-gray-600 text-sm">Hỗ trợ vay ngân hàng lên tới 85% giá trị căn hộ, giúp anh chị sở hữu nhà chỉ với 15% vốn tự có.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-yellow-600">
+                    <h5 class="font-bold text-yellow-800 mb-2">Lãi suất 0% & Ân hạn gốc</h5>
+                    <p class="text-gray-600 text-sm">Ưu đãi lãi suất 0% lên tới 36 tháng. Anh chị không cần lo áp lực tài chính trong 3 năm đầu.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-yellow-600">
+                    <h5 class="font-bold text-yellow-800 mb-2">Chiết khấu cực khủng 17%</h5>
+                    <p class="text-gray-600 text-sm">Chiết khấu thanh toán sớm lên đến 17%, tối ưu hóa lợi nhuận ngay khi mua.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center text-center p-8 bg-blue-900 rounded-2xl text-white shadow-xl">
+                <h3 class="serif text-2xl mb-4">Tư Vấn Chuyên Sâu 24/7</h3>
+                <p class="text-blue-200 mb-8 font-light">Hãy để tôi giúp anh chị chọn được căn hộ ưng ý nhất và phương án tài chính tối ưu nhất.</p>
+                <div class="text-3xl font-bold text-yellow-500 mb-2">ThanhNamBĐS</div>
+                <a href="tel:0965325555" class="text-4xl font-black hover:text-yellow-400 transition-colors">0965 32 5555</a>
+                <div class="mt-8 pt-8 border-t border-blue-800 w-full">
+                    <p class="text-xs uppercase tracking-widest text-blue-400">Vinhomes Galaxy - Masterise Nguyễn Trãi</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-right mt-12">
+            <p class="signature text-yellow-800">ThanhNamBĐS 0965325555</p>
+        </div>
+    </section>
+
+</body>
+</html>

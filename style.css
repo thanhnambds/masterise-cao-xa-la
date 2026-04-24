@@ -931,7 +931,7 @@ ul { list-style: none; }
 
 /* CTA Section */
 .cta-section {
-    background: url('cta_bg_opt.jpg') center/cover fixed;
+    background: url('images/cta_bg_opt.jpg') center/cover fixed;
     position: relative;
 }
 .cta-section::before {
