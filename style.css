@@ -187,6 +187,7 @@ ul { list-style: none; }
 .hero {
     position: relative;
     height: 100vh;
+    height: 100svh;
     min-height: 700px;
     display: flex;
     align-items: center;
@@ -701,6 +702,14 @@ ul { list-style: none; }
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 20px 50px rgba(16,38,63,0.1);
+    margin-top: 30px;
+}
+.image-map-wrapper iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 20px;
+    display: block;
 }
 .image-map-wrapper img {
     max-width: 100%;
@@ -716,7 +725,7 @@ ul { list-style: none; }
     transform: scale(1.05);
 }
 
-/* Policy Grid */
+/* Policy Grid & Section */
 .policy-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -732,6 +741,73 @@ ul { list-style: none; }
 .policy-card:hover img {
     transform: translateY(-10px);
     box-shadow: 0 25px 60px rgba(16,38,63,0.25);
+}
+
+.policy-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    background: #f4f7f2;
+    border-radius: 20px;
+    border: 1px dashed #3f5c38;
+    padding: 40px;
+    margin-top: 30px;
+    box-shadow: 0 10px 30px rgba(63, 92, 56, 0.05);
+}
+.policy-content {
+    flex: 1;
+    min-width: 300px;
+}
+.policy-icon {
+    font-size: 3.5rem;
+    color: var(--primary);
+    margin-bottom: 25px;
+    display: block;
+}
+.policy-text {
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.8;
+    margin: 0;
+}
+.policy-contact {
+    color: var(--secondary);
+    font-size: 1.5rem;
+}
+.policy-contact a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+.policy-contact a:hover {
+    opacity: 0.8;
+}
+.policy-image {
+    flex: 1.2;
+    min-width: 300px;
+    text-align: center;
+}
+.policy-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Virtual Tour */
+.virtual-tour-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+.virtual-tour-wrapper iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    max-width: 100%;
+    display: block;
 }
 
 /* Amenities Stats */
@@ -1237,6 +1313,11 @@ ul { list-style: none; }
 }
 
 @media (max-width: 768px) {
+    .section { padding: 60px 0; }
+    
+    .virtual-tour-wrapper iframe { height: 400px; }
+    .image-map-wrapper iframe { height: 300px; }
+    
     .spec-stats { flex-wrap: wrap; gap: 30px; padding: 30px 0; }
     .stat-item { width: 45%; }
     .stat-num { font-size: 1.8rem; }
@@ -1261,6 +1342,20 @@ ul { list-style: none; }
     .policy-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+    .policy-wrapper {
+        padding: 25px;
+        gap: 25px;
+    }
+    .policy-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    .policy-text {
+        font-size: 1.1rem;
+    }
+    .policy-contact {
+        font-size: 1.3rem;
     }
     .floating-contact { bottom: 20px; right: 20px; }
     .float-btn { width: 50px; height: 50px; font-size: 20px; }
