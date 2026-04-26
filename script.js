@@ -290,6 +290,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 successDiv.style.display = 'block';
             }
 
+            // --- FIRE FACEBOOK PIXEL LEAD EVENT ---
+            if (typeof fbq === 'function') {
+                fbq('track', 'Lead', {
+                    content_name: 'Đăng Ký Nhận Bảng Giá',
+                    project: 'Cao Xà Lá'
+                });
+                console.log('✅ Đã bắn sự kiện Lead lên Facebook Pixel');
+            }
+
         } catch (error) {
             console.error('Lỗi khi gửi form:', error);
             alert('Cảm ơn anh/chị. Thông tin đăng ký đã được ghi nhận vào hệ thống tạm thời!');
@@ -350,4 +359,26 @@ document.addEventListener('DOMContentLoaded', () => {
             handleFormSubmit(popupForm);
         });
     }
+
+    // --- FACEBOOK PIXEL CONTACT EVENTS ---
+    const zaloBtns = document.querySelectorAll('a[href*="zalo.me"]');
+    const callBtns = document.querySelectorAll('a[href^="tel:"]');
+
+    zaloBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (typeof fbq === 'function') {
+                fbq('track', 'Contact', { content_name: 'Click Zalo' });
+                console.log('✅ Đã bắn sự kiện Contact (Zalo) lên Facebook Pixel');
+            }
+        });
+    });
+
+    callBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (typeof fbq === 'function') {
+                fbq('track', 'Contact', { content_name: 'Click Hotline' });
+                console.log('✅ Đã bắn sự kiện Contact (Hotline) lên Facebook Pixel');
+            }
+        });
+    });
 });
