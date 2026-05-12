@@ -4,7 +4,7 @@ Disallow: /.git/
 Disallow: /.claude/
 
 # Sitemap
-Sitemap: https://lumiere-cao-xa-la.vn/sitemap.xml
+Sitemap: https://thanhnamhomes.vn/sitemap.xml
 
 # Crawl-delay (optional, for polite crawling)
 Crawl-delay: 1
